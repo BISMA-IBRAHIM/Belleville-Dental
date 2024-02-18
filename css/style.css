@@ -1,0 +1,122 @@
+
+.product-grid {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.product-grid:hover {
+  box-shadow: 0px 0px 14.85px 0.15px rgba(0, 0, 0, 0.2);
+}
+.product-grid .product-image {
+  overflow: hidden;
+  position: relative;
+}
+.product-grid .product-image a.image {
+  display: block;
+}
+.product-grid .product-image img {
+  width: 100%;
+  height: 200px;
+  transition: all 0.3s ease-in-out;
+}
+.product-grid .product-image:hover img {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.product-grid .product-sale-label {
+  color: #fff;
+  background: #d33;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.product-grid .product-links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+.product-grid .product-links li {
+  margin: 0 0 10px;
+}
+.product-grid .product-links li a {
+  color: #161b1d;
+  background: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.07);
+  transform: scale(0);
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.product-grid:hover .product-links li a {
+  transform: scale(1);
+}
+.product-grid .product-links li a:hover {
+  color: #45ab49;
+}
+.product-grid .product-content {
+  background: whitesmoke;
+  padding: 15px;
+}
+.product-grid .category {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 0 0 7px;
+  display: block;
+}
+.product-grid .category a {
+  color: #999;
+  transition: all 0.3s ease 0s;
+}
+.product-grid .category a:hover {
+  color: #161b1d;
+  text-decoration: underline;
+}
+.product-grid .title {
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  margin: 0 0 7px;
+}
+.product-grid .title a {
+  color: #161b1d;
+  transition: all 0.3s ease 0s;
+}
+.product-grid .title a:hover {
+  color: #45ab49;
+}
+.product-grid .price {
+  color: #45ab49;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+}
+.product-grid .price span {
+  color: #999;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: line-through;
+  margin: 0 5px 0 0;
+}
+@media screen and (max-width: 990px) {
+  .product-grid {
+    margin-bottom: 30px;
+  }
+}
